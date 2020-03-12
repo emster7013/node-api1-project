@@ -102,5 +102,5 @@ server.put('/api/users/:id', (req, res) =>{
     })
     .catch(err => {
         res.status(500).json({errorMessage: "The user information could not be modified." })
-    })
-})
+    });
+});
